@@ -1,0 +1,48 @@
+@import "../constants"
+
+$last-height: 38px
+
+.emoji-container
+  border-radius: $border-radius
+  height: 300px
+  position: absolute
+  top: -20px
+  transform: translateY(-100%)
+  z-index: 1000
+  opacity: 1
+  transition: opacity .2s
+
+  &.hidden
+    opacity: 0
+    z-index: -1000
+
+  .emoji-picker
+    border: 2px solid $border-color
+    height: 300px - $last-height
+    overflow-y: scroll
+
+
+.emoji-last
+  height: $last-height - 2px
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+  background: $border-color
+  border-bottom-right-radius: $border-radius
+  border-bottom-left-radius: $border-radius
+  position: relative
+
+  & *
+    box-sizing: content-box
+    padding: 10px 10px
+    background-clip: padding-box
+
+  .smile-last,
+  .recent-last
+    width: 18px
+    height: 18px
+
+  &.all > .smile-last,
+  &.recent > .recent-last
+    background: white
