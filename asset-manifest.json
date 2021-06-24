@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/emoji-picker/static/css/main.f0be5e0d.chunk.css",
-    "main.js": "/emoji-picker/static/js/main.498139ff.chunk.js",
-    "main.js.map": "/emoji-picker/static/js/main.498139ff.chunk.js.map",
+    "main.css": "/emoji-picker/static/css/main.b6fb1025.chunk.css",
+    "main.js": "/emoji-picker/static/js/main.acd6a0a1.chunk.js",
+    "main.js.map": "/emoji-picker/static/js/main.acd6a0a1.chunk.js.map",
     "runtime-main.js": "/emoji-picker/static/js/runtime-main.a1e13fd1.js",
     "runtime-main.js.map": "/emoji-picker/static/js/runtime-main.a1e13fd1.js.map",
     "static/js/2.b34f2f94.chunk.js": "/emoji-picker/static/js/2.b34f2f94.chunk.js",
     "static/js/2.b34f2f94.chunk.js.map": "/emoji-picker/static/js/2.b34f2f94.chunk.js.map",
     "index.html": "/emoji-picker/index.html",
-    "static/css/main.f0be5e0d.chunk.css.map": "/emoji-picker/static/css/main.f0be5e0d.chunk.css.map",
+    "static/css/main.b6fb1025.chunk.css.map": "/emoji-picker/static/css/main.b6fb1025.chunk.css.map",
     "static/js/2.b34f2f94.chunk.js.LICENSE.txt": "/emoji-picker/static/js/2.b34f2f94.chunk.js.LICENSE.txt",
     "static/media/recent.b95ee132.svg": "/emoji-picker/static/media/recent.b95ee132.svg",
     "static/media/smile.baf5d03b.svg": "/emoji-picker/static/media/smile.baf5d03b.svg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.a1e13fd1.js",
     "static/js/2.b34f2f94.chunk.js",
-    "static/css/main.f0be5e0d.chunk.css",
-    "static/js/main.498139ff.chunk.js"
+    "static/css/main.b6fb1025.chunk.css",
+    "static/js/main.acd6a0a1.chunk.js"
   ]
 }
