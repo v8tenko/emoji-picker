@@ -1,4 +1,5 @@
-import React, {CSSProperties, FC, useEffect, useRef, useState} from 'react'
+import React, {CSSProperties, forwardRef, useEffect, useRef, useState} from 'react'
+import {ReactComponent as Smile} from "../../res/smile.svg";
 
 export interface AutoTextAreaProps {
     onChange?: (event: React.ChangeEvent<HTMLTextAreaElement>) => void,
@@ -8,8 +9,11 @@ export interface AutoTextAreaProps {
 }
 
 
-export const AutoTextArea: FC<AutoTextAreaProps>
-    = ( { style, onChange, className, content }: AutoTextAreaProps) => {
+export const AutoTextArea
+    = forwardRef<SVGSVGElement, AutoTextAreaProps>((
+    {style, onChange, className, content}: AutoTextAreaProps,
+    smileRef
+) => {
     const textAreaRef = useRef<HTMLTextAreaElement>(null)
     const [text, setText] = useState("")
     const [textAreaHeight, setTextAreaHeight] = useState("auto")
@@ -31,6 +35,7 @@ export const AutoTextArea: FC<AutoTextAreaProps>
         <div
             style={{
                 minHeight: parentHeight,
+                position: "relative"
             }}
         >
 			<textarea
@@ -45,6 +50,10 @@ export const AutoTextArea: FC<AutoTextAreaProps>
                 }}
                 onChange={onChangeHandler}
             />
+            <Smile
+                className="emoji-input-smile"
+                ref={smileRef}
+            />
         </div>
     )
-}
+})

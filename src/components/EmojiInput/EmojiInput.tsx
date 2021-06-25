@@ -3,8 +3,7 @@ import "./EmojiInput.sass"
 import {EmojiPicker} from "./EmojiPicker/EmojiPicker";
 import {DataHelper} from "utils/DataHelper";
 import {useAppDispatch, useAppSelector} from "app/hooks";
-import {ReactComponent as Smile} from "res/smile.svg"
-import {AutoTextArea} from "../AutoTextArea/AutoTextArea";
+    import {AutoTextArea} from "../AutoTextArea/AutoTextArea";
 import {
     showPicker, setHover, mouseOut, mouseOutPicker, hidePicker
 } from "features/pickerSlice";
@@ -73,15 +72,10 @@ export const EmojiInput: FC = () => {
                 onChange={updateInputText}
                 className="emoji-input-span"
                 content={inputText}
+                ref={smileRef}
                 style={{
                     width: DataHelper.PICKER_WIDTH
                 }}
-            >
-                {inputText}
-            </AutoTextArea>
-            <Smile
-                className="emoji-input-smile"
-                ref={smileRef}
             />
         </form>
     )
